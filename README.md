@@ -5,7 +5,7 @@ and visualizes completed work as a GitHub-style grass graph.
 
 ## Tech Stack
 
-- Ruby 3.1.7
+- Ruby 3.3
 - Ruby on Rails 7.2
 - PostgreSQL
 - Tailwind CSS via `tailwindcss-rails`
@@ -13,7 +13,7 @@ and visualizes completed work as a GitHub-style grass graph.
 
 ## Setup
 
-Install Ruby 3.1.7 and PostgreSQL before running the app.
+Install Ruby 3.3 and PostgreSQL before running the app.
 
 ```sh
 bundle install
