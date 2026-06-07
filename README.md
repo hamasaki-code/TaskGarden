@@ -1,24 +1,56 @@
-# README
+# TaskGarden
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TaskGarden is a Ruby on Rails task management app that organizes tasks by genre
+and visualizes completed work as a GitHub-style grass graph.
 
-Things you may want to cover:
+## Tech Stack
 
-* Ruby version
+- Ruby 3.1.7
+- Ruby on Rails 7.2
+- PostgreSQL
+- Tailwind CSS via `tailwindcss-rails`
+- Hotwire with Turbo and Stimulus
 
-* System dependencies
+## Setup
 
-* Configuration
+Install Ruby 3.1.7 and PostgreSQL before running the app.
 
-* Database creation
+```sh
+bundle install
+bin/rails db:create
+bin/rails db:migrate
+```
 
-* Database initialization
+The default development database configuration uses the PostgreSQL role
+`postgres` on `localhost`.
 
-* How to run the test suite
+## Development
 
-* Services (job queues, cache servers, search engines, etc.)
+Run the Rails server and Tailwind watcher together:
 
-* Deployment instructions
+```sh
+bin/dev
+```
 
-* ...
+Then open:
+
+```txt
+http://localhost:3000
+```
+
+## Test
+
+Run the Rails test suite:
+
+```sh
+bin/rails test
+```
+
+## Documentation
+
+Project requirements and implementation order are managed in `docs/`.
+
+- `docs/requirements.md`
+- `docs/design.md`
+- `docs/implementation-rules.md`
+- `docs/issues.md`

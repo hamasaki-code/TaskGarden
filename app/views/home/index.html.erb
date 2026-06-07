@@ -1,0 +1,28 @@
+<% content_for :title, "TaskGarden" %>
+
+<section class="w-full py-10">
+  <div class="mx-auto max-w-3xl text-center">
+    <p class="text-sm font-medium text-[#2F6B4F]">TaskGarden</p>
+    <h1 class="mt-3 text-3xl font-semibold text-[#1F2933] md:text-5xl">
+      毎日の完了が、あなたの庭になる。
+    </h1>
+    <p class="mt-5 text-base leading-7 text-[#6B7280]">
+      ジャンル別にタスクを管理し、完了した積み上げを草グラフで可視化するRailsアプリです。
+    </p>
+    <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+      <a class="inline-flex items-center justify-center rounded-xl bg-[#2F6B4F] px-5 py-3 text-sm font-medium text-white hover:bg-[#25563F]" href="#">
+        無料で始める
+      </a>
+      <a class="inline-flex items-center justify-center rounded-xl border border-[#E5E7EB] bg-white px-5 py-3 text-sm font-medium text-[#1F2933] hover:bg-[#F7F8F3]" href="#grass-demo">
+        デモを見る
+      </a>
+    </div>
+  </div>
+
+  <div id="grass-demo" class="mx-auto mt-10 grid max-w-3xl grid-cols-7 gap-2 rounded-2xl bg-[#F7F8F3] p-5">
+    <% [0, 1, 2, 3, 4, 1, 0, 2, 3, 1, 4, 0, 1, 2, 3, 4, 2, 1, 0, 3, 4].each do |level| %>
+      <% colors = ["#EBEDF0", "#D8F3DC", "#95D5B2", "#52B788", "#2D6A4F"] %>
+      <div class="aspect-square rounded-md" style="background-color: <%= colors[level] %>"></div>
+    <% end %>
+  </div>
+</section>
